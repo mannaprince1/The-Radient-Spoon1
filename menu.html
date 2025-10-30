@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Radiant Spoon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #fafafc;
+            font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            color: #666;
+            font-size: 2rem;
+        }
+        .navbar-nav .nav-link {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.04rem;
+        }
+        .navbar-nav .nav-link.active {
+            color: #d72660 !important;
+            font-weight: 700;
+        }
+        .section-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #d72660;
+            font-size: 2.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .menu-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+            font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 24px rgba(215,38,96,0.12);
+        }
+        .menu-image {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .menu-content {
+            padding: 25px;
+        }
+        .menu-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .menu-desc {
+            color: #666;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            letter-spacing: 0.1px;
+        }
+        .category-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 40px 0 30px 0;
+            padding-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        /* Price color classes */
+        .price-pink { color: #d72660; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-blue { color: #005792; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-gold { color: #fbb13c; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-green { color: #27ae60; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-purple { color: #8e44ad; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-orange { color: #ff7f50; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-teal { color: #20b2aa; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+        .price-brown { color: #a0522d; font-family: 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.12rem;}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tasty</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="text-muted">Delicious meals crafted with fresh ingredients</p>
+        </div>
+
+        <!-- Salads Category -->
+        <h3 class="category-title" style="color:#27ae60; border-bottom:2px solid #27ae60;">Fresh Salads</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#b2f7ef,#27ae60);">🥗</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#27ae60;">Garden Fresh Salad</h4>
+                        <p class="menu-desc">Mixed greens, tomatoes, cucumbers, onions with vinaigrette dressing</p>
+                        <div class="menu-price price-green">₹220</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#ffe4ec,#d72660);">🥙</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#d72660;">Caesar Salad</h4>
+                        <p class="menu-desc">Crisp romaine lettuce with parmesan cheese and croutons</p>
+                        <div class="menu-price price-pink">₹260</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#fbb13c,#fffaf0);">🍅</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#fbb13c;">Mediterranean Bowl</h4>
+                        <p class="menu-desc">Quinoa, olives, feta cheese, cherry tomatoes, and herbs</p>
+                        <div class="menu-price price-gold">₹320</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dishes Category -->
+        <h3 class="category-title" style="color:#005792; border-bottom:2px solid #005792;">Main Dishes</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#e0ecff,#005792);">🍝</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#005792;">Pasta Primavera</h4>
+                        <p class="menu-desc">Fresh pasta tossed with seasonal vegetables and herbs</p>
+                        <div class="menu-price price-blue">₹340</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#f5e6ff,#8e44ad);">🐟</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#8e44ad;">Grilled Salmon</h4>
+                        <p class="menu-desc">Atlantic salmon with lemon butter and steamed vegetables</p>
+                        <div class="menu-price price-purple">₹480</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#ffe4c4,#ff7f50);">🍗</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#ff7f50;">Herb Roasted Chicken</h4>
+                        <p class="menu-desc">Tender chicken breast with rosemary and thyme</p>
+                        <div class="menu-price price-orange">₹390</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages Category -->
+        <h3 class="category-title" style="color:#20b2aa; border-bottom:2px solid #20b2aa;">Beverages</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#e0f7fa,#20b2aa);">🥤</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#20b2aa;">Fresh Juice</h4>
+                        <p class="menu-desc">Orange, apple, or mixed fruit juice</p>
+                        <div class="menu-price price-teal">₹90</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#d7cec7,#a0522d);">☕</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#a0522d;">Premium Coffee</h4>
+                        <p class="menu-desc">Freshly brewed coffee from selected beans</p>
+                        <div class="menu-price price-brown">₹70</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <div class="menu-image" style="background:linear-gradient(135deg,#e3ffe3,#27ae60);">🍵</div>
+                    <div class="menu-content">
+                        <h4 class="menu-title" style="color:#27ae60;">Herbal Tea</h4>
+                        <p class="menu-desc">Selection of chamomile, green tea, and mint</p>
+                        <div class="menu-price price-green">₹80</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
